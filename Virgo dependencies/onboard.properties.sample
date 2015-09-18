@@ -1,0 +1,64 @@
+mysql.driver=com.mysql.jdbc.Driver
+mysql.host=localhost
+mysql.port=3306
+mysql.name=onboard
+mysql.username=root
+mysql.password=password
+
+redis.host=127.0.0.1
+redis.port=6379
+redis.database=0
+
+solr.url=http://localhost:8089/solr/mysqlDB
+solr.username=admin
+solr.password=password
+
+mailgun.url={Your URL}
+mailgun.apikey={Your key}
+mailgun.defaultFromName={Your Name}
+mailgun.defaultFromAddress={YourEmail@youremail.com}
+mailgun.domain={Your Domain}
+
+upyun.bucketName=
+upyun.username=yourname
+upyun.password=password
+upyun.separator=!
+
+file.rootPathVariable=user.home
+file.folderName=.teamforge_files
+
+account.tokenExpired=259200
+account.rememberMeExpired=2592000
+
+/*需要每次自动获取IP时修改*/
+site.host=localhost:8000
+site.protocol=http://
+site.static.host=localhost:8080
+site.static.protocol=http://
+
+sshserver.port=22
+
+plugins.document.defaultTitle=\u4E3B\u9875
+plugins.document.defaultContent=\u7F16\u8F91\u672C\u9875\u9762\u6765\u5B8C\u5584\u6587\u6863\u7684\u7D22\u5F15
+
+/*data.userSeperate 用于区分在本地调试时区分用户 填自己的名字加以区分*/
+data.userSeperate=pkutxq
+
+data.jenkinsHost=http://localhost:8080
+
+/*jenkins 回调时的主机IP 每次修改IP后要修改*/
+data.host=${site.protocol}${site.host}
+data.privateRepositoryHost=localhost:5000
+data.credentialsId=
+data.github.state=
+/*git 认证时的主机IP 每次修改IP后要修改*/
+data.github.client_id=
+#data.github.client_id=
+data.github.scope=user:email,repo
+data.github.state=
+#data.github.client_secret=
+data.github.client_secret=
+data.bitbucket.key=
+data.bitbucket.secret=
+data.bitbucket.osm=oauth_signature_method=HMAC-SHA1
+user.defaultUser=-1
